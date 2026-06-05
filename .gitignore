@@ -25,5 +25,9 @@ build/
 out/
 .cache/
 
+# MkDocs build output (disposable — source .md is authoritative)
+web/site/
+.wrangler/
+
 # Claude Code local overrides
 .claude/settings.local.json

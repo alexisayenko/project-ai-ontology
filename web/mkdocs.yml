@@ -4,6 +4,7 @@ site_description: >-
   end-to-end as a multi-level ontology — from paradigms through
   models, training, inference, agents, and the surrounding
   ecosystem.
+site_url: https://ai.isayenko.org
 
 docs_dir: kb
 site_dir: site
@@ -18,11 +19,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: deep purple
+      accent: cyan
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: deep purple
+      accent: cyan
       toggle:
         icon: material/brightness-4
         name: Switch to light mode

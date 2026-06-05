@@ -57,9 +57,14 @@ what to update:
 ## Tech stack
 
 Markdown source under `web/kb/`, rendered with **MkDocs Material**.
-Source `.md` is authoritative; the build is disposable. Deploy
-pipeline (Cloudflare Workers, à la `project-consciousness`) not set
-up yet — local/GitHub reading only for now.
+Source `.md` is authoritative; the build is disposable. Built and
+deployed by **GitHub Actions → GitHub Pages**
+([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) on
+push to `main` — no local toolchain needed. Public URL:
+<https://ai.isayenko.org> (custom domain via `web/kb/CNAME`).
+
+(Diverges from `project-consciousness`, which builds locally and
+deploys to Cloudflare Workers — same MkDocs build, different host.)
 
 ## Repo
 

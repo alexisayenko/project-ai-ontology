@@ -46,10 +46,10 @@ project-ai-ontology/
 └── LICENSE
 ```
 
-Folders are created when content lands, not before. `docs/`
-(project strategy) and the deploy pipeline (`package.json`,
-`wrangler.toml`) are intentionally not scaffolded yet — add them
-the day they're needed.
+Built and deployed by GitHub Actions → GitHub Pages
+([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) on
+push to `main`; live at <https://ai.isayenko.org>. `docs/` (project
+strategy) is created the day it's needed, not before.
 
 ## Naming
 
