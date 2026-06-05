@@ -1,0 +1,94 @@
+site_name: AI / ML / LLM Ontology
+site_description: >-
+  A personal knowledge base mapping artificial intelligence
+  end-to-end as a multi-level ontology — from paradigms through
+  models, training, inference, agents, and the surrounding
+  ecosystem.
+
+docs_dir: kb
+site_dir: site
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - footnotes
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Overview: index.md
+  - I. Concepts:
+      - 1. Artificial Intelligence: 01-artificial-intelligence.md
+      - 2. Machine Learning: 02-machine-learning.md
+      - 3. Deep Learning: 03-deep-learning.md
+      - 4. Math & Data Representation: 04-math-and-data-representation.md
+      - 5. Foundation Models: 05-foundation-models.md
+      - 6. Language Models: 06-language-models.md
+      - 7. Transformer Architecture: 07-transformer-architecture.md
+      - 8. Model Internals: 08-model-internals.md
+  - II. Building:
+      - 9. Data & Datasets: 09-data-and-datasets.md
+      - 10. Training & Post-Training: 10-training-and-post-training.md
+      - 11. Evaluation & Testing: 11-evaluation-and-testing.md
+      - 12. Inference: 12-inference.md
+      - 13. Reasoning & Test-Time Compute: 13-reasoning-and-test-time-compute.md
+      - 14. RAG: 14-rag.md
+      - 15. Knowledge & Memory: 15-knowledge-and-memory.md
+      - 16. Agents: 16-agents.md
+      - 17. Tools, Skills, Commands & Protocols: 17-tools-skills-commands-protocols.md
+      - 18. AI Engineering: 18-ai-engineering.md
+      - 19. Model Lifecycle: 19-model-lifecycle.md
+  - III. Operating:
+      - 20. Safety, Governance & Alignment: 20-safety-governance-and-alignment.md
+      - 21. Security & Threat Model: 21-security-threat-model.md
+      - 22. Cost & Economics: 22-cost-and-economics.md
+      - 23. Infrastructure & Runtime: 23-infrastructure-and-runtime.md
+      - 24. Interfaces: 24-interfaces.md
+  - IV. World:
+      - 25. Vendor & Model Ecosystem: 25-vendor-and-model-ecosystem.md
+      - 26. People & Research Lineage: 26-people-and-research-lineage.md
+  - Tags: tags.md
